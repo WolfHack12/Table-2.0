@@ -1,0 +1,21 @@
+body
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+td{
+    background: dodgerblue; 
+    border:white; 
+    width:100px; 
+    height:100px
+}
+table{
+    position: absolute;
+    border: 1px solid dodgerblue; 
+    border-spacing: 3px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
