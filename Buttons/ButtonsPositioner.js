@@ -13,8 +13,14 @@ function defaultPosPluses(){
     buttonPlus2.style.top = coords2.top + "px";
     buttonPlus2.style.left = (coords2.left + lastCell.clientWidth + 5) + "px";
 }
-buttonPlus1.addEventListener('click', defaultPosPluses);
-buttonPlus2.addEventListener('click', defaultPosPluses);
+buttonPlus1.addEventListener('click', function(){
+    defaultPosMinuses();
+    defaultPosPluses();
+});
+buttonPlus2.addEventListener('click', function(){
+    defaultPosMinuses();
+    defaultPosPluses();
+});
 
 function defaultPosMinuses(){
     let firstCell = table.rows[0].cells[0];
@@ -25,5 +31,14 @@ function defaultPosMinuses(){
     buttonMinus2.style.left = (coords.left - firstCell.clientHeight) - 5 + "px";
     
 }
+
+buttonMinus1.addEventListener('click', function(){
+    defaultPosMinuses();
+    defaultPosPluses();
+});
+buttonMinus2.addEventListener('click', function(){
+    defaultPosMinuses();
+    defaultPosPluses();
+});
 defaultPosPluses();
 defaultPosMinuses();

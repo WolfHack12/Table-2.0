@@ -61,4 +61,9 @@ h1{
 #plus2:hover{
     background:rgb(219, 189, 16);
 }
- 
+#minus2:hover{
+    background: rgb(247, 17, 17);
+}
+#minus1:hover{
+    background: rgb(247, 17, 17);
+}
