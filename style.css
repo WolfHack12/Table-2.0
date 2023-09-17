@@ -1,8 +1,5 @@
 body
 {
-    display:flex;
-    align-items: center;
-    justify-content: center;
 }
 td{
     background: dodgerblue; 
@@ -11,6 +8,9 @@ td{
     height:100px
 }
 table{
+    display:flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     border: 1px solid dodgerblue; 
     border-spacing: 3px;
@@ -18,4 +18,33 @@ table{
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
+}
+.buttons{
+    width: 100px;
+    height: 100px;
+    border: 0;
+}
+#plus1{
+    background:rgb(187, 161, 14);
+    width: inherit;
+    height: inherit;
+    border: inherit;
+    position: absolute;
+    
+}
+#plus2{
+    background:rgb(187, 161, 14);
+    width: inherit;
+    height: inherit;
+    border: inherit;
+    position: absolute;
+}
+h1{
+    color: white;
+}
+#plus1:hover{
+    background:rgb(219, 189, 16);
+}
+#plus2:hover{
+    background:rgb(219, 189, 16);
 }
