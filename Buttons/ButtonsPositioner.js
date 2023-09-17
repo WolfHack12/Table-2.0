@@ -13,15 +13,6 @@ function defaultPosPluses(){
     buttonPlus2.style.top = coords2.top + "px";
     buttonPlus2.style.left = (coords2.left + lastCell.clientWidth + 5) + "px";
 }
-buttonPlus1.addEventListener('click', function(){
-    defaultPosMinuses();
-    defaultPosPluses();
-});
-buttonPlus2.addEventListener('click', function(){
-    defaultPosMinuses();
-    defaultPosPluses();
-});
-
 function defaultPosMinuses(){
     let firstCell = table.rows[0].cells[0];
     let coords = firstCell.getBoundingClientRect();
@@ -31,6 +22,15 @@ function defaultPosMinuses(){
     buttonMinus2.style.left = (coords.left - firstCell.clientHeight) - 5 + "px";
     
 }
+
+buttonPlus1.addEventListener('click', function(){
+    defaultPosMinuses();
+    defaultPosPluses();
+});
+buttonPlus2.addEventListener('click', function(){
+    defaultPosMinuses();
+    defaultPosPluses();
+});
 
 buttonMinus1.addEventListener('click', function(){
     defaultPosMinuses();
@@ -42,3 +42,19 @@ buttonMinus2.addEventListener('click', function(){
 });
 defaultPosPluses();
 defaultPosMinuses();
+
+table.addEventListener("mouseover", function(event){
+    let td = event.target.closest('td');
+    if(!td) return;
+    moveMinus1(td);
+    moveMinus2(td);
+})
+function moveMinus1(td){
+    let coords = td.getBoundingClientRect();
+    buttonMinus1.style.left = coords.left  + "px";
+}
+function moveMinus2(td){
+    let coords = td.getBoundingClientRect();
+    buttonMinus2.style.top = coords.top + "px";
+    
+}
