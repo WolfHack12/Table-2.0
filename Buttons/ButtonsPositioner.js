@@ -11,5 +11,5 @@ function defaultPosPluses(){
     buttonPlus2.style.top = coords2.top + "px";
     buttonPlus2.style.left = (coords2.left + lastCell.clientWidth + 5) + "px";
 }
-window.onload = startPosPluses();
-buttonPlus1.addEventListener('click', startPosPluses);
+window.onload = defaultPosPluses;
+buttonPlus1.addEventListener('click', defaultPosPluses);
