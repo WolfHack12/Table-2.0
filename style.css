@@ -1,6 +1,4 @@
-body
-{
-}
+
 td{
     background: dodgerblue; 
     border:white; 
@@ -39,6 +37,21 @@ table{
     border: inherit;
     position: absolute;
 }
+#minus1{
+    background: rgb(175, 16, 16);
+    width: inherit;
+    height: inherit;
+    border: inherit;
+    position: absolute;
+}
+#minus2{
+    background: rgb(175, 16, 16);
+    width: inherit;
+    height: inherit;
+    border: inherit;
+    position: absolute;
+}
+
 h1{
     color: white;
 }
@@ -48,3 +61,4 @@ h1{
 #plus2:hover{
     background:rgb(219, 189, 16);
 }
+ 
