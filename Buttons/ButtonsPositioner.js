@@ -13,3 +13,4 @@ function defaultPosPluses(){
 }
 window.onload = defaultPosPluses;
 buttonPlus1.addEventListener('click', defaultPosPluses);
+buttonPlus2.addEventListener('click', defaultPosPluses);
