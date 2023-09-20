@@ -26,10 +26,12 @@ function defaultPosMinuses(){
 }
 
 AddRowButton.addEventListener('click', function(){
+    addRow();
     defaultPosMinuses();
     defaultPosPluses();
 });
 AddColButton.addEventListener('click', function(){
+    addColumn();
     defaultPosMinuses();
     defaultPosPluses();
 });
@@ -39,6 +41,7 @@ DeleteColButton.addEventListener('click', function(){
     defaultPosPluses();
 });
 DeleteRowButton.addEventListener('click', function(){
+    deleteRow();
     defaultPosMinuses();
     defaultPosPluses();
 });

@@ -15,9 +15,9 @@ function deleteRow(){
     if(table.rows.length == 1) return;
     table.deleteRow(0);
 }
-function deleteCell(){
+function deleteColumn(){
     if(table.rows[0].cells.length == 1) return;
     for(let i = 0; table.rows.length; i++){
-        table.rows[i].deleteCell(0);
+        table.rows[i].deleteCell(-1);
     }
 }
