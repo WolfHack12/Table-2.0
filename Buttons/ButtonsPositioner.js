@@ -3,6 +3,7 @@ var AddColButton = document.getElementById("plus2");
 var DeleteColButton = document.getElementById("minus1");
 var DeleteRowButton = document.getElementById("minus2");
 var table = document.querySelector("table");
+export {table, AddColButton, AddRowButton, DeleteColButton, DeleteRowButton}
 defaultPosPluses();
 defaultPosMinuses();
 function defaultPosPluses(){
@@ -60,4 +61,4 @@ table.addEventListener("mouseover", function(event){
     
     moveMinus1(td);
     moveMinus2(td);
-})
+});

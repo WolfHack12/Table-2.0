@@ -43,6 +43,7 @@ table{
     height: inherit;
     border: inherit;
     position: absolute;
+    visibility: hidden;
 }
 #minus2{
     background: rgb(175, 16, 16);
@@ -50,6 +51,7 @@ table{
     height: inherit;
     border: inherit;
     position: absolute;
+    visibility: hidden;
 }
 
 h1{
