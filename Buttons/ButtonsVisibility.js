@@ -1,5 +1,6 @@
 import {table, AddColButton, AddRowButton, DeleteColButton, DeleteRowButton} from "./ButtonsPositioner.js";
-table.addEventListener('mouseover',function(event){
+table.addEventListener('mouseover',function(){
+    if(table.rows.length == 1 && table.rows[0].cells.length == 1) return;
     DeleteColButton.style.visibility = "visible"
     DeleteRowButton.style.visibility = "visible"
 })
@@ -49,11 +50,13 @@ DeleteRowButton.addEventListener('mouseleave', function(event){
         DeleteRowButton.style.visibility = 'hidden'
     }
 })
-AddColButton.addEventListener('mouseover', function(event){
+AddColButton.addEventListener('mouseover', function(){
+    if(table.rows.length == 1 && table.rows[0].cells.length == 1) return;
     DeleteColButton.style.visibility = "visible"
     DeleteRowButton.style.visibility = "visible"
 })
-AddRowButton.addEventListener('mouseover', function(event){
+AddRowButton.addEventListener('mouseover', function(){
+    if(table.rows.length == 1 && table.rows[0].cells.length == 1) return;
     DeleteColButton.style.visibility = "visible"
     DeleteRowButton.style.visibility = "visible"
 })
